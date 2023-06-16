@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "title": "Home",
+    "link": "/home-one",
+    "megaMenu": false
+    
+  },
+  {
+    "id": 2,
+    "title": "About",
+    "link": "/about",
+    "megaMenu": false,
+    "subMenu": false
+  },
+  {
+    "id": 3,
+    "title": "Services",
+    "link": "/services",
+    "megaMenu": false,
+    "subMenu": false
+  },
+  {
+    "id": 4,
+    "title": "Team",
+    "link": "/team",
+    "megaMenu": false,
+    "subMenu": false
+  },
+  {
+    "id": 5,
+    "title": "Tools",
+  
+    "megaMenu": false,
+    "subMenu": [
+      {
+        "title": "GST CALCULATOR",
+        "link": "/gstcalculator"
+      },
+      {
+        "title": "SIP CALCULATOR",
+        "link": "/sipcalculator"
+      },
+      {
+        "title": "BUSSINESS SETUP CALCULATOR",
+        "link": "/bussinesscalculator"
+      },
+      {
+        "title": "SALARY CALCULATOR",
+        "link": "/Salarycalculator"
+      },
+      {
+        "title": "TDS CALCULATOR",
+        "link": "/tdscalculator"
+      },
+      {
+        "title": "NPS CALCULATOR",
+        "link": "/npscalculator"
+      },
+      {
+        "title": "PPF CALCULATOR",
+        "link": "/ppfcalculator"
+      },{
+        "title": "RETIRENMENT PLANNING CALCULATOR",
+        "link": "/retirementcalculator"
+      },{
+        "title": "HRA CALCULATOR",
+        "link": "/hracalculator"
+      },{
+        "title": "EPF CALCULATOR",
+        "link": "/epfcalculator"
+      },
+      {
+        "title": "INCOME TAX CALCULATOR",
+        "link": "/incometaxcalculator"
+      },
+      {
+        "title": "RD CALCULATOR",
+        "link": "/rdcalculator"
+      },
+      {
+        "title": "GRATUITY CALCULATOR",
+        "link": "/gratuitycalculator"
+      },{
+        "title": "HSN CODE FINDER",
+        "link": "/blog/wild-life-workshop?id=14"
+      },{
+        "title": "SIMPLE COMPOUND INTERST",
+        "link": "/simpleinterstcalcularor"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Contact",
+    "link": "/contact"
+  }
+]
