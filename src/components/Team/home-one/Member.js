@@ -12,21 +12,21 @@ function Member(props) {
         <div className="col-sm-6 col-lg-3">
           <div className="team-mem-item">
             <figure className="member-pic team-upper">
-              <Link to={`${process.env.PUBLIC_URL + teamMemberURl}`}>
-                <img
-                  src={require("../../../assets/img/" + props.profilePic)}
-                  alt={props.name}
-                />
-              </Link>
+              {/* <Link to={`${process.env.PUBLIC_URL + teamMemberURl}`}> */}
+              <img
+                src={require("../../../assets/img/" + props.profilePic)}
+                alt={props.name}
+              />
+              {/* </Link> */}
             </figure>
             <div className="member-info">
               <h5>
-                <Link
+                {/* <Link
                   to={`${process.env.PUBLIC_URL + teamMemberURl}`}
                   className="stretched-link"
-                >
-                  {props.name}
-                </Link>
+                > */}
+                {props.name}
+                {/* </Link> */}
               </h5>
               <span className="designation">{props.designation}</span>
             </div>
@@ -35,21 +35,21 @@ function Member(props) {
       ) : (
         <div className="team-mem-item">
           <figure className="member-pic">
-            <Link to={`${process.env.PUBLIC_URL + teamMemberURl}`}>
-              <img
-                src={require("../../../assets/img/" + props.profilePic)}
-                alt={props.name}
-              />
-            </Link>
+            {/* <Link to={`${process.env.PUBLIC_URL + teamMemberURl}`}> */}
+            <img
+              src={require("../../../assets/img/" + props.profilePic)}
+              alt={props.name}
+            />
+            {/* </Link> */}
           </figure>
           <div className="member-info">
             <h5>
-              <Link
+              {/* <Link
                 to={`${process.env.PUBLIC_URL + teamMemberURl}`}
                 className="stretched-link"
-              >
-                {props.name}
-              </Link>
+              > */}
+              {props.name}
+              {/* </Link> */}
             </h5>
             <span className="designation">{props.designation}</span>
           </div>

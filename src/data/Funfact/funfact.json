@@ -1,22 +1,18 @@
 [
   {
     "id": 1,
-    "counterNumber": 2654,
-    "counterText": "Happy Clients"
+    "counterNumber": 50,
+    "counterText": "Customers"
   },
   {
     "id": 2,
-    "counterNumber": 1520,
-    "counterText": "Project Done"
+    "counterNumber": 50,
+    "counterText": "Lawyers"
   },
   {
     "id": 3,
-    "counterNumber": 120,
-    "counterText": "Awards Win"
-  },
-  {
-    "id": 4,
-    "counterNumber": 3580,
-    "counterText": "Cups Coffee"
+    "counterNumber": 2.5,
+    "counterText": "Better than competition"
   }
+ 
 ]
