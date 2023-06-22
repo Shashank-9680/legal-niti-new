@@ -47,13 +47,14 @@ const Rdcalculator = () => {
     <Fragment>
       <Header/>
       <section className="rd-box">
+      <h4 className="rd-heading">
+              RD Calculator For Maturity Amount
+            </h4>
         <div className="rd-container">
           <div className="left-side">
-            <h4 className="rd-heading">
-              RD Calculator Online to Calculate Maturity Amount
-            </h4>
+            
             <p className="para1">
-              Know your Future RD returns in just a click with the Vakilsearch
+              Know your Future RD returns in just a click with the 
               RD Calculator
             </p>
 

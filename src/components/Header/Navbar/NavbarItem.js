@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import navbarData from "../../../data/Navbar/navbar";
 import "./NavbarItem.css";
+
+
+
 function NavbarItem(props) {
   return navbarData.map((item) => (
     <li
@@ -12,17 +15,26 @@ function NavbarItem(props) {
       {(() => {
         if (item.subMenu) {
           return (
-            <ul className="submenu-nav">
-              {item.subMenu.map((subItem, index) => {
-                return (
-                  <li key={index}>
-                    <Link to={`${process.env.PUBLIC_URL + subItem.link}`}>
-                      {subItem.title}
-                    </Link>
-                  </li>
-                );
-              })}
-            </ul>
+            <ul className="submenu-nav" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start', alignItems: 'flex-start' }}>
+            {item.subMenu.map((subItem, index) => {
+              // Calculate the row and column index based on the index of the submenu item
+              const rowIndex = Math.floor(index / 5);
+              const colIndex = index % 5;
+          
+              // Calculate the CSS class for the column based on the column index
+              const colClass = `col-${colIndex + 1}`;
+              const rowClass = `row-${rowIndex + 1}`;
+          
+              return (
+                <li key={index} className={`${colClass} ${rowClass}`} style={{ flexBasis: '20%', padding: '5px' }}>
+                  <Link to={`${process.env.PUBLIC_URL + subItem.link}`}>
+                    {subItem.title}
+                  </Link>
+                </li>
+              );
+            })}
+          </ul>
+          
           );
         }
 

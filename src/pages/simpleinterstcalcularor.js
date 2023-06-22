@@ -69,7 +69,7 @@ const Simpleinterstcalcularor = () => {
                 type="radio"
                 name="calculation"
                 value="simple"
-                checked={calculationType === "simple"}
+                defaultChecked={calculationType === "simple"}
                 onChange={handleCalculationTypeChange}
               />
 
@@ -81,7 +81,7 @@ const Simpleinterstcalcularor = () => {
                 type="radio"
                 name="calculation"
                 value="compound"
-                checked={calculationType === "compound"}
+                defaultChecked={calculationType === "compound"}
                 onChange={handleCalculationTypeChange}
               />
               <label className="label" htmlFor="inclusive">

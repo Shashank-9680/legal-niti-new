@@ -49,15 +49,15 @@ const Npscalculator = () => {
     <Fragment>
       <Header />
       <section className="nps-box">
+      <h4 className="nps-heading">NPS Calculator</h4>
         <div className="nps-container">
           <div className="left-side">
-            <h4 className="nps-heading">NPS Calculator</h4>
             <p className="para1">
               Find out how much money you can save for your future!
             </p>
             <p className="para2">
               Calculate your National Pension Scheme amount in seconds using the
-              Vakilsearch NPS calculator!
+              NPS calculator!
             </p>
 
             <div className="given-input">

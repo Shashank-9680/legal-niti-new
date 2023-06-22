@@ -1,6 +1,7 @@
 import React, { useState, Fragment } from "react";
 // import "./style.css"
 import "./sip.css";
+// import "./gst.css";
 import Header from "../components/Header";
 // import Fragment from "../Fragment/Fragment"
 
@@ -58,11 +59,12 @@ const Sipcalculator = () => {
     <Fragment>
       <Header />
       <section className="sip-box">
+      <h4 className="sip-heading">
+               SIP Return Calculator 
+            </h4>
         <div className="sip-container">
           <div className="left-side">
-            <h4 className="sip-heading">
-              Mutual Fund SIP Return Calculator Online
-            </h4>
+           
             <p className="para1">Know your SIP returns anytime, anywhere!</p>
             <p className="para2">
               Calculate the future value of your monthly SIP investment on the
@@ -70,26 +72,26 @@ const Sipcalculator = () => {
             </p>
             <div className="radio-buttons">
               <input
-                className="radio-1"
-                type="radio"
+                className="radio-11"
+                type="button"
                 value="sip"
-                checked={investmentType === "sip"}
-                onChange={handleInvestmentTypeChange}
+                defaultChecked={investmentType === "sip"}
+                onClick={handleInvestmentTypeChange}
               />
-              <label className="label" htmlFor="sip">
+              {/* <label className="label" htmlFor="sip">
                 SIP
-              </label>
+              </label> */}
 
               <input
-                className="radio-2"
-                type="radio"
+                className="radio-12"
+                type="button"
                 value="lumpsum"
-                checked={investmentType === "lumpsum"}
-                onChange={handleInvestmentTypeChange}
+                defaultChecked={investmentType === "lumpsum"}
+                onClick={handleInvestmentTypeChange}
               />
-              <label className="label" htmlFor="lumpsum">
+              {/* <label className="label" htmlFor="lumpsum">
                 Lumpsum
-              </label>
+              </label> */}
             </div>
 
             <div className="given-input">
@@ -124,7 +126,7 @@ const Sipcalculator = () => {
                   value={timePeriod}
                   onChange={handleTimePeriodChange}
                 />
-                <p className="year-symbol">mon.</p>
+                <p className="year-symbol">year</p>
               </div>
             </div>
           </div>

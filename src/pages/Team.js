@@ -19,13 +19,13 @@ const PageTeam = () => {
             <PageHeader
                 bgImg={require('../assets/img/page-header.jpg')}
                 title="KNOW ABOUT BUSINEX THE ULTIMATE TEAM"
-                content="Businex always try to provide the best Business Solutions for Clients to grow up their Business very sharply and smoothly."
+                content="Legalniti always try to provide the best Solutions for Clients to grow up their Business very sharply and smoothly."
             />
             <About
                 title={'Our Team'}
                 heading="Meet Our <br/> Expert Member"
                 thumb={ServiceThumb}
-                content="<b>Businex</b> always try to provide the best Business Solutions for Clinets to grow up their Business very sharply and smoothly. We voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+                content="<b>Legalniti</b> Our dedicated team of legal experts and AI enthusiasts is committed to revolutionizing compliance management. Together, we're shaping the future of legal compliances through innovation, efficiency, and a passion for empowering businesses. Join us on this transformative journey."
             />
             <TeamMember/>
             <BrandLogo/>

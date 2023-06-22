@@ -1,16 +1,16 @@
 .sip-box {
   /* background-color: rgba(246, 250, 253, 0.8); */
-  display: flex;
-  justify-content: center;
+  
   align-items: center;
   padding-top: 50px;
 }
 
 .sip-box .sip-container {
   display: flex;
-
+  
   justify-content: center;
-  gap: 10rem;
+ 
+  gap: 3rem;
 }
 .sip-box .left-side {
   width: 40%;
@@ -19,11 +19,12 @@
 }
 .sip-heading {
   font-weight: 700;
-  font-size: 40.6619px;
+  font-size: 60.6619px;
   line-height: 49px;
-  color: #00c4f4;
+  color: #080b1a;
   font-family: Roboto;
-  margin-bottom: 24px;
+  margin-bottom: 100px;
+  text-align: center;
 }
 .left-side .para1 {
   font-weight: 500;
@@ -48,13 +49,25 @@
   margin-bottom: 30px;
   font-family: Roboto;
 }
-.radio-buttons .radio-1,
-.radio-2 {
-  margin-right: 12px;
-  width: 20px;
-  height: 20px;
-  font-family: Roboto;
+.radio-buttons .radio-11,
+.radio-12 {
+  padding: 15px 25px;
+ border: unset;
+ border-radius: 15px;
+ color: #212121;
+ z-index: 1;
+ background: #e8e8e8;
+ position: relative;
+ font-weight: 1000;
+ font-size: 17px;
+ -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+ transition: all 250ms;
+ overflow: hidden;
+font-family: Roboto;
 }
+
+
 .radio-buttons .label {
   margin-right: 69px;
   font-family: Roboto;
@@ -67,7 +80,7 @@
 .radio-buttons .label2 {
   margin-bottom: 0;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px ;
   line-height: 20px;
   color: #606162;
   font-family: Roboto;
@@ -101,11 +114,13 @@
 .user-input-rs .percentage-symbol {
   position: absolute;
   left: 16px;
+  
   top: 50%;
   transform: translateY(-50%);
   font-weight: 700;
   font-size: 20px;
   color: #231f20;
+  margin-right: 10px; 
 }
 .user-input-rs .year-symbol {
   position: absolute;
@@ -215,4 +230,40 @@
   font-size: 34px;
   line-height: 41px;
   color: #000;
+}
+@media only screen and (max-width: 600px){
+  .sip-box{
+    max-width:100vw;
+    overflow: hidden;
+  }
+
+  .sip-container
+  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+  }
+
+  .radio-buttons  
+  {
+flex-direction: row ;
+  }
+  .radio-1 .radio-2
+  {
+    size: 100px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .sip-box{
+    max-width:100vw;
+    overflow: hidden;
+  }
+  .sip-container
+  {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px auto;
+  }
 }

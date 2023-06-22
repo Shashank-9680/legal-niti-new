@@ -20,7 +20,9 @@ const ContactPage = () => {
                                 <div className="contact-info-con">
                                     <h3>Contact Info</h3>
                                     <ContactInfo
-                                        address="2005 Stokes Isle Apartment <br/>896, Washington 10010, USA <br/>https://example.com <br/>(+68) 120034509"
+                                        address="Legalniti workspace,5th floor PG block BMSCE,Bull temple road,Basavanagudi Bangalore 560019<br />
+                                        contact@legalniti.com <br />
+                                        (+91)9481829401,(+91)7371889861"
                                     />
                                 </div>
                             </div>

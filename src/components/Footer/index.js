@@ -17,16 +17,6 @@ function Footer() {
                 <Link to={`${process.env.PUBLIC_URL + "/"}`}>
                   <img src={Logo} alt="Logo" />
                 </Link>
-
-                <Text>
-                  During the summer my wife and I got to go on an amazing road
-                  trip in Vancouver.
-                </Text>
-
-                <Text classes="copyright-txt">
-                  &copy; {new Date().getFullYear()} Businex Ltd. All Rights
-                  Reserved.
-                </Text>
               </div>
             </div>
           </div>
@@ -71,7 +61,7 @@ function Footer() {
                 </LI>
                 <LI>
                   <Link to="https://dribbble.com/hastech/" target={"_blank"}>
-                    Dribbble
+                    LinkedIn
                   </Link>
                 </LI>
                 <LI>
@@ -86,9 +76,9 @@ function Footer() {
           <div className="col-md-4 col-lg-3">
             <Widget title="Contact Us">
               <address>
-                2005 Stokes Isle Apartment. 896, Washington 10010, USA <br />
-                https://example.com <br />
-                (+68) 120034509
+                Legalniti workspace,5th floor PG block BMSCE,Bull temple road,Basavanagudi Bangalore 560019<br />
+                contact@legalniti.com <br />
+                (+91)9481829401,(+91)7371889861
               </address>
             </Widget>
           </div>

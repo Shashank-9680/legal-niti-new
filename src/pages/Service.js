@@ -12,7 +12,7 @@ import Footer from "../components/Footer";
 import LoginRegister from "../components/LoginRegister";
 import MobileMenu from "../components/MobileMenu";
 
-import ServiceThumb from "../assets/img/about.jpg";
+import ServiceThumb from "../assets/img/about-2.jpg";
 
 const PageService = () => {
   return (
@@ -21,7 +21,7 @@ const PageService = () => {
       <PageHeader
         bgImg={require("../assets/img/page-header.jpg")}
         title="OUR SERVICES"
-        content="Businex always try to provide the best Business Solutions for Clients to grow up their Business very sharply and smoothly."
+        content="We always try to provide the best Business Solutions for Clients to grow up their Business very sharply and smoothly."
       />
       <PageAbout
         title={"Our Services"}

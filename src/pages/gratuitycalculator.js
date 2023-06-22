@@ -26,14 +26,15 @@ const Gratuitycalculator = () => {
     <Fragment>
       <Header />
       <section className="gratuity-box">
+      <h4 className="gratuity-heading">
+              Gratuity Calculator
+            </h4>
         <div className="gratuity-container">
           <div className="left-side">
-            <h4 className="gratuity-heading">
-              Gratuity Calculator Online India 2023
-            </h4>
+            
             <p className="para1">Are you aware of your bonus eligibility?</p>
             <p className="para2">
-              Invest some time with Vakilsearch & understand gratuity with our
+              Invest some time  & understand gratuity with our
               gratuity calculator online!
             </p>
 

@@ -35,14 +35,15 @@ const Epfcalculator = () => {
     <Fragment>
       <Header />
       <section className="epf-box">
+      <h4 className="epf-heading">EPF Calculator</h4>
         <div className="epf-container">
           <div className="left-side">
-            <h4 className="epf-heading">EPF Calculator</h4>
+           
             <p className="para1">
               Having trouble figuring out your PF, EPF Calculations?
             </p>
             <p className="para2">
-              Let Your Calculations Go Better with Vakilsearch's PF Interest
+              Let Your Calculations Go Better  PF Interest
               Calculator! Ready to explore more about PF, EPF?
             </p>
 

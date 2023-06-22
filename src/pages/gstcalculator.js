@@ -59,38 +59,39 @@ const Gstcalculator = () => {
     <Fragment>
       <Header />
       <section className="gst-box">
+      <h3 className="gst-heading">
+              GST Calculator
+        </h3>
         <div className="gst-container">
           <div className="left-side">
-            <h3 className="gst-heading">
-              GST Calculator: Calculate GST Amount
-            </h3>
             <p className="para1">Don't know how to calculate GST?</p>
             <p className="para2">
-              Get the best GST calculator in India at Vakilsearch. Easy GST
+              Get the best GST calculator in India. Easy GST
               calculation in seconds, anytime and anywhere!
             </p>
 
             <div className="radio-buttons">
-              <label>
+              
                 <input
-                  className="radio-1"
-                  type="radio"
+                  className="radio-11"
+                  type="button"
                   value="inclusive"
-                  checked={inclusive}
-                  onChange={handleRadioChange}
+                  defaultChecked={inclusive}
+                  onClick={handleRadioChange}
                 />
-                GST Inclusive
-              </label>
-              <label>
+               {/* <label> GST Inclusive
+              </label> */}
+              
                 <input
-                  className="radio-2"
-                  type="radio"
+                  className="radio-12"
+                  type="button"
                   value="exclusive"
-                  checked={!inclusive}
-                  onChange={handleRadioChange}
+                  defaultChecked={!inclusive}
+                  onClick={handleRadioChange}
                 />
-                GST Exclusive
-              </label>
+
+               {/* <label> GST Exclusive
+              </label> */}
             </div>
             <div className="given-input">
               <label htmlFor="cost-service">Cost of Goods/Services</label>
@@ -103,6 +104,7 @@ const Gstcalculator = () => {
               <label htmlFor="gst-rate">GST Rate</label>
               <div className="user-input-rs">
                 <select value={gstRate} onChange={handleGstRateChange}>
+                  
                   <option value={3}>3%</option>
                   <option value={5}>5%</option>
                   <option value={12}>12%</option>

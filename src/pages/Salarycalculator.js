@@ -31,13 +31,14 @@ const Salarycalculator = () => {
     <Fragment>
       <Header/>
       <section className="salary-box">
+      <h4 className="salary-heading">Inhand Salary Calculator</h4>
+
         <div className="salary-container">
           <div className="left-side">
-            <h4 className="salary-heading">Inhand Salary Calculator</h4>
             <p className="para1">Calculate Your Monthly Salary On the Go</p>
             <p className="para2">
               Quickly calculate your take-home salary and other deductions in
-              seconds using the Vakilsearch Salary calculator online. Enjoy easy
+              seconds using the  Salary calculator online. Enjoy easy
               and accurate results!
             </p>
             <div className="given-input">

@@ -20,7 +20,7 @@ const PageAbout = () => {
     <Fragment>
       <Header />
       <PageHeader
-        bgImg={require("../assets/img/page-header.jpg")}
+        bgImg={require("../assets/img/about-3.jpg")}
         title="ABOUT US"
         content="Streamline Your Startup Journey with AI-Powered Simplicity
 

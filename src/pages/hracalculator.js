@@ -44,17 +44,18 @@ const Hracalculator = () => {
     <Fragment>
       <Header />
       <section className="hra-box">
+      <h4 className="hra-heading">
+              House Rent Allowance Calculator
+            </h4>
         <div className="hra-container">
           <div className="left-side">
-            <h4 className="hra-heading">
-              House Rent Allowance (HRA) Calculator
-            </h4>
+            
             <p className="para1">
               Are you aware of how to calculate your House Rent Allowance
               exemption?
             </p>
             <p className="para2">
-              The Vakilsearch HRA calculator online is your best choice to do
+              The HRA calculator online is your best choice to do
               the job in mere seconds!
             </p>
 

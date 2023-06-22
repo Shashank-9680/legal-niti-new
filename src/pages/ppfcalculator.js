@@ -44,9 +44,10 @@ const PPfcalculator = () => {
     <Fragment>
       <Header/>
       <section className="ppf-box">
+      <h4 className="ppf-heading">Calculate Your PPF Online Now!</h4>
         <div className="ppf-container">
           <div className="left-side">
-            <h4 className="ppf-heading">Calculate Your PPF Online Now!</h4>
+            
             <p className="para1">
               Get accurate maturity and interest calculations with our PPF
               Calculator.

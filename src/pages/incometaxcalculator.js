@@ -38,12 +38,13 @@ const Incometaxcalculator = () => {
     <Fragment>
       <Header />
       <section className="it-box">
+      <h4 className="it-heading">Income Tax Calculator</h4>
         <div className="it-container">
           <div className="left-side">
-            <h4 className="it-heading">Income Tax Calculator</h4>
+            
             <p className="para2">
               Plan your retirement in seconds with the retirement plan
-              calculator from Vakilsearch!
+              calculator 
             </p>
             <div className="given-input">
               <label htmlFor="income">Income</label>

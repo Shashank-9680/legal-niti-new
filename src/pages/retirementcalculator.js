@@ -45,11 +45,12 @@ const Retirementcalculator = () => {
     <Fragment>
       <Header/>
       <section className="rp-box">
-        <div className="rp-container">
-          <div className="left-side">
-            <h4 className="rp-heading">
+      <h4 className="rp-heading">
               Online Retirement Planning Calculator
             </h4>
+        <div className="rp-container">
+          <div className="left-side">
+            
             <p className="para2"></p>
             <div className="given-input">
               <label htmlFor="Currentage">Current Age</label>

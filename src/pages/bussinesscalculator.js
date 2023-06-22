@@ -29,13 +29,14 @@ const Bussinesscalculator = () => {
     <Fragment>
       <Header />
       <section className="busc-box">
+      <h4 className="busc-heading">
+              Calculate Startup/Setup Costs
+            </h4>
         <div className="busc-container">
           <div className="left-side">
-            <h4 className="busc-heading">
-              Calculate Your Business Startup/Setup Costs
-            </h4>
+            
             <div className="given-input">
-              <label htmlFor="investment">Investment</label>
+              <label  className="box-heading" >Investment</label>
               <div className="user-input-rs">
                 <input
                   type="number"
@@ -46,7 +47,7 @@ const Bussinesscalculator = () => {
               </div>
             </div>
             <div className="given-input">
-              <label htmlFor="revenue">Revenue</label>
+              <label  className="box-heading">Revenue</label>
               <div className="user-input-rs">
                 <input
                   type="number"

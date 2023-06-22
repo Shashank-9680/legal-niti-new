@@ -25,14 +25,15 @@ const Tdscalculator = () => {
     <Fragment>
       <Header />
       <section className="tds-box">
+      <h4 className="tds-heading">TDS Calculator</h4>
         <div className="tds-container">
           <div className="left-side">
-            <h4 className="tds-heading">TDS Calculator</h4>
+           
             <p className="para1">
               Can't figure out how to calculate your taxes?
             </p>
             <p className="para2">
-              You don't need to worry. Vakilsearch is here to help.
+              You don't need to worry. We are here to help.
             </p>
 
             <div className="given-input">

@@ -3,8 +3,8 @@
     "id": 1,
     "title": "Consultation",
     "data":[ "Talk to a Lawyer", "Talk to a CA","Talk to a CS", "Talk to a IP/Trademark"],
-    "shortDesc": "Lorem ipsum dolor sit amet, consect etur adipiscing elit consectetur adipisicing elit. Asdipiscing elit. Consectetur adipisicing hastech.",
-    "thumb": "service/01.jpg",
+    "shortDesc": "Speak with our knowledgeable professionals, including experienced Lawyers, Chartered Accountants (CAs), Company Secretaries (CS), and specialized IP/Trademark Lawyers. Receive personalized guidance tailored to your legal and business needs. Schedule a consultation now!",
+    "thumb": "service/07.png",
     "previewImages": [
       "service/details/01.jpg",
       "service/details/02.jpg",
@@ -57,8 +57,8 @@
     "Private to One Person Company",
     "RBI Compliance"
   ],
-       "shortDesc": "Lorem ipsum dolor sit amet, consect etur adipiscing elit consectetur adipisicing elit. Asdipiscing elit. Consectetur adipisicing hastech.",
-    "thumb": "service/02.jpg",
+       "shortDesc": "Discover a world of efficiency with our comprehensive range of services. From hassle-free GST Registration, Filing, and Advisory to expertly managing Directors, Capital, and Company Changes, we have got you covered.",
+    "thumb": "service/09.png",
     "previewImages": [
       "service/details/01.jpg",
       "service/details/02.jpg",
@@ -92,8 +92,8 @@
     "BIS Registration",
     "Web/E-Commerce Website Development"
   ],
-    "shortDesc": "Lorem ipsum dolor sit amet, consect etur adipiscing elit consectetur adipisicing elit. Asdipiscing elit. Consectetur adipisicing hastech.",
-    "thumb": "service/03.jpg",
+    "shortDesc": "Are you an aspiring entrepreneur looking to establish your own venture? Look no further! Our website offers a wide range of professional services tailored to meet your business needs",
+    "thumb": "service/08.png",
     "previewImages": [
       "service/details/01.jpg",
       "service/details/02.jpg",
@@ -127,8 +127,8 @@
     "Logo Design",
     "Design Registration"
   ],
-    "shortDesc": "Lorem ipsum dolor sit amet, consect etur adipiscing elit consectetur adipisicing elit. Asdipiscing elit. Consectetur adipisicing hastech.",
-    "thumb": "service/04.jpg",
+    "shortDesc": "Secure Your Intellectual Property with Our Comprehensive Services!",
+    "thumb": "service/10.png",
     "previewImages": [
       "service/details/01.jpg",
       "service/details/02.jpg",
@@ -160,8 +160,8 @@
     "GDPR",
     "Disclaimer"
   ],
-    "shortDesc": "Lorem ipsum dolor sit amet, consect etur adipiscing elit consectetur adipisicing elit. Asdipiscing elit. Consectetur adipisicing hastech.",
-    "thumb": "service/05.jpg",
+    "shortDesc": "When it comes to protecting your business relationships, our comprehensive range of documentation solutions have got you covered. ",
+    "thumb": "service/11.jpg",
     "previewImages": [
       "service/details/01.jpg",
       "service/details/02.jpg",
@@ -187,8 +187,8 @@
     "Sec.80G & Sec.12A",
     "Darpan Registration"
   ],
-    "shortDesc": "Lorem ipsum dolor sit amet, consect etur adipiscing elit consectetur adipisicing elit. Asdipiscing elit. Consectetur adipisicing hastech.",
-    "thumb": "service/06.jpg",
+    "shortDesc": "Transform your noble vision into reality by registering your NGO as a Section 8 Company, Trust, or Society. Benefit from specific advantages and legal frameworks based on your chosen structure. ",
+    "thumb": "service/12.jpg",
     "previewImages": [
       "service/details/03.jpg",
       "service/details/01.jpg",

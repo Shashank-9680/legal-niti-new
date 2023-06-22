@@ -30,8 +30,8 @@
   {
     "id": 5,
     "title": "Tools",
-  
-    "megaMenu": false,
+    "link" : "#",
+    "megaMenu":false,
     "subMenu": [
       {
         "title": "GST CALCULATOR",
@@ -81,12 +81,6 @@
       {
         "title": "GRATUITY CALCULATOR",
         "link": "/gratuitycalculator"
-      },{
-        "title": "HSN CODE FINDER",
-        "link": "/blog/wild-life-workshop?id=14"
-      },{
-        "title": "SIMPLE COMPOUND INTERST",
-        "link": "/simpleinterstcalcularor"
       }
     ]
   },
