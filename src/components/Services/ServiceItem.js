@@ -11,9 +11,9 @@ function ServiceItem(props) {
                         <img src={require('../../assets/img/' + props.thumb)} alt={props.title}/>
                     </Link>
 
-                    {/* <figcaption className="service-txt">
+                    <figcaption className="service-txt">
                         <h5>{props.title}</h5>
-                    </figcaption> */}
+                    </figcaption>
                 </figure>
                 <div className="service-content">
                     <div className="service-content-inner">

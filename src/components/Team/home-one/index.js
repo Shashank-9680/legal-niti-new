@@ -3,7 +3,7 @@ import SectionTitle from "../../UI/SectionTitle";
 import SlickSlider from "../../UI/Slick";
 import Member from "./Member";
 
-import teamBg from '../../../assets/img/team/team-bg.jpg';
+import teamBg from '../../../assets/img/allpages.jpg';
 import Teams from '../../../data/Team/home-one';
 
 function Team() {

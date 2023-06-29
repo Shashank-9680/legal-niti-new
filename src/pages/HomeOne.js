@@ -19,10 +19,10 @@ const HomeOne = () => {
   return (
     <Fragment>
       <Header />
-      <Slider />
+      <Slider url={"https://general-site-bucket.s3.ap-south-1.amazonaws.com/legalniti(compressed).mp4"}/>
       <About />
       <Features classes="sp-top" />
-      {/* <Services classes="sm-top-wt" /> */}
+      <Services  />
       <Testimonials />
       {/* <Team /> */}
       {/* <Blog /> */}

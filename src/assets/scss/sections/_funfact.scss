@@ -49,5 +49,6 @@
 
   &:before{
     @include overlay($brandColor, 0.92);
+    background-color: white;
   }
 }

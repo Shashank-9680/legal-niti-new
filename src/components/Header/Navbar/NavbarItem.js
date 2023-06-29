@@ -11,11 +11,11 @@ function NavbarItem(props) {
       key={item.id}
       className={item.subMenu || item.megaMenu ? "has-submenu" : ""}
     >
-      <Link to={`${process.env.PUBLIC_URL + item.link}`}>{item.title}</Link>
+      <Link to={`${process.env.PUBLIC_URL + item.link}`} className="link">{item.title}</Link>
       {(() => {
         if (item.subMenu) {
           return (
-            <ul className="submenu-nav" style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-start', alignItems: 'flex-start' }}>
+            <ul className="submenu-nav" >
             {item.subMenu.map((subItem, index) => {
               // Calculate the row and column index based on the index of the submenu item
               const rowIndex = Math.floor(index / 5);
@@ -26,7 +26,12 @@ function NavbarItem(props) {
               const rowClass = `row-${rowIndex + 1}`;
           
               return (
-                <li key={index} className={`${colClass} ${rowClass}`} style={{ flexBasis: '20%', padding: '5px' }}>
+                <li key={index} className={`${colClass} ${rowClass}`} style={{
+                  flexBasis: '20%',
+                  padding: '5px',
+                  width: '50%',
+                  
+                }}>
                   <Link to={`${process.env.PUBLIC_URL + subItem.link}`}>
                     {subItem.title}
                   </Link>

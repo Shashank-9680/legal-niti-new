@@ -4,7 +4,7 @@ import FeaturesData from '../../data/Features/features'
 
 function Features({classes}) {
     return (
-        <div className={`feature-area-wrapper ${classes}`}>
+        <div className={`feature-area-wrapper ${classes}`} >
             <div className="container">
                 <div className="row mtn-sm-60 mtn-md-5">
                     {

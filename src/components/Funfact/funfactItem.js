@@ -25,7 +25,7 @@ class FunfactItem extends Component {
               end={this.props.counterNumber}
             >
               {({ countUpRef }) => (
-                <div>
+                <div style={{color:"black"}}>
                   <span ref={countUpRef} />
                   <VisibilitySensor
                     onChange={(isVisible) =>
@@ -39,7 +39,7 @@ class FunfactItem extends Component {
             </CountUp>
           </h2>
 
-          <h6 className="counter-txt">{this.props.counterText}</h6>
+          <h6 className="counter-txt" style={{color:"black"}}>{this.props.counterText}</h6>
         </div>
       </div>
     );

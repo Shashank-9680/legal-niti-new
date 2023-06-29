@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import Slider from "react-slick";
 import testimonialData from '../../../data/Testimonials/home-two'
 import quote from '../../../assets/img/icons/quote.png'
+import testimonial  from '../../../assets/img/testimonialbg.jpg'
 import SectionTitle from "../../UI/SectionTitle";
 
 const NextArrow = ({className, onClick}) => {
@@ -33,6 +34,7 @@ class Testimonial extends Component {
             slidesToShow: 1,
             swipeToSlide: true,
             focusOnSelect: true,
+            autoplay: true,
             className: "testimonial-content--2",
             nextArrow: <NextArrow/>,
             prevArrow: <PrevArrow/>
@@ -40,12 +42,13 @@ class Testimonial extends Component {
 
         return (
             <div className="testimonial-area testimonial-area--2 bg-offwhite sm-top">
+                
                 <div className="container">
                     <div className="row d-lg-none">
                         <div className="col-12 text-center">
                             <SectionTitle
                                 title="TESTIMONIALS"
-                                heading="Don’t Believe us, <br/> Check Client Word"
+                                heading="Don't Believe us, <br/> Check Client Word"
                                 tagline="More over <span class='tag-no'>1900+</span><strong>customer</strong>"
                             />
                         </div>

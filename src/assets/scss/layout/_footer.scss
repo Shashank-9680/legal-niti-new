@@ -3,10 +3,17 @@
 ===========================*/
 .footer-area,.call-top-action-wrap {
   background-color: $offWhite;
+  padding: 70px;
+  
 }
+.sp-bottom{
+  background-color: #080b1a;
+  padding: 40px;
 
+}
 .widget-item {
   margin-top: 38px;
+  
 
   .widget-title {
     color: $brandColor;
@@ -31,11 +38,13 @@
 .widget-list {
   li {
     line-height: 2;
+    color: white;
 
     a {
-      color: $paragraph;
+      color: white;
       font-weight: 500;
       transition: 0.2s;
+
 
       &:hover {
         color: $brandColor;
@@ -47,8 +56,10 @@
 
 // About Widget
 .about-widget {
+  // align-items: baseline;
+  text-align: center;
   img {
-    max-width: 100px;
+    width: 200px;
     margin-bottom: 20px;
   }
 }

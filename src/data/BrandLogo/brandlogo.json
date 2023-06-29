@@ -18,5 +18,25 @@
     "id": 4,
     "logoSrc": "brand-logo/09.png",
     "URL": "/"
+  },
+  {
+    "id": 5,
+    "logoSrc": "brand-logo/06.png",
+    "URL": "/"
+  },
+  {
+    "id": 6,
+    "logoSrc": "brand-logo/07.png",
+    "URL": "/"
+  },
+  {
+    "id": 7,
+    "logoSrc": "brand-logo/06.png",
+    "URL": "/"
+  },
+  {
+    "id": 8,
+    "logoSrc": "brand-logo/07.png",
+    "URL": "/"
   }
 ]

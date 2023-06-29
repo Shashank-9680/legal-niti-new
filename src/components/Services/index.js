@@ -3,12 +3,12 @@ import SectionTitle from '../UI/SectionTitle'
 import ServiceItem from  './ServiceItem'
 import ServicesData from '../../data/Services/services'
 
-import serviceTopBg from '../../assets/img/service/service-bg.jpg'
+import serviceTopBg from '../../assets/img/wave.png'
 
 function Services({classes}) {
     return (
         <div className={`service-area-wrapper ${classes}`}>
-            <div className="service-area-top" style={{backgroundImage: `url("${serviceTopBg}")`}}>
+            <div className="service-area-top" >
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-6 col-xl-5 m-auto text-center">
