@@ -29,11 +29,75 @@ import Incometaxcalculator from "./pages/incometaxcalculator";
 import Rdcalculator from "./pages/rdcalculator";
 import Gratuitycalculator from "./pages/gratuitycalculator";
 import Simpleinterstcalcularor from "./pages/simpleinterstcalcularor";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import HeaderLogin from "./pages/Header";
+import Dashboard from "./pages/Dashboard";
+import { CircularProgress } from "@mui/material";
+import Box from "@mui/material/Box";
+import { useEffect, useContext, useState } from "react";
+import { LoginContext } from "./pages/ContextProvider/Context";
+import Service2 from "./templates/ServiceDetails/Service2";
+import { createBrowserHistory } from "history";
+import AttendenceList from "./pages/AttendenceList";
+import Noticeofmeet from "./pages/Noticeofmeet";
+import Directorlist from "./pages/Directorlist";
+import Boardmeeting from "./pages/Boardmeeting";
+// import useHistory from "react-router-dom";
 // import ServiceItemPage from "./templates/itemData/ItemPage";
 // import PageServiceDetails from "./pages/ServiceDetails";
+const history = createBrowserHistory();
 const App = () => {
+  const [data, setData] = useState(false);
+  const { logindata, setLoginData } = React.useContext(LoginContext);
+
+  const DashboardValid = async () => {
+    let token = localStorage.getItem("usersdatatoken");
+    // const history = useHistory();
+
+    const res = await fetch("/validuser", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: token,
+      },
+    });
+
+    const data = await res.json();
+
+    if (data.status === 401 || !data) {
+      console.log("user not valid");
+    } else {
+      console.log("user verify");
+      setLoginData(data);
+      // history.push("/dash");
+    }
+  };
+
+  useEffect(() => {
+    setTimeout(() => {
+      DashboardValid();
+      setData(true);
+    }, 2000);
+  }, []);
+
+  // if (!data) {
+  //   // Add a loading state while data is being fetched
+  //   return (
+  //     <Box
+  //       sx={{
+  //         display: "flex",
+  //         justifyContent: "center",
+  //         alignItems: "center",
+  //         height: "100vh",
+  //       }}
+  //     >
+  //       <CircularProgress />
+  //     </Box>
+  //   );
+  // }
   return (
-    <Router>
+    <Router history={history}>
       <ScrollToTop>
         <Switch>
           <Route
@@ -50,10 +114,43 @@ const App = () => {
             component={Servicedetails}
           /> */}
           <Route
-            path={`${process.env.PUBLIC_URL + "/service/:itemId"}`}
-            component={Gstcalculator}
-          />
+            path={`${process.env.PUBLIC_URL}/servicess/:serviceType`}
+            render={(props) => {
+              const urlParams = new URLSearchParams(props.location.search);
+              const id = urlParams.get("id");
+              const item = urlParams.get("item");
 
+              return <Service2 id={id} item={item} />;
+            }}
+          />
+          <Route
+            path={`${process.env.PUBLIC_URL + "/service/:itemId"}`}
+            component={Servicedetails}
+          />
+          <Route
+            path={`${process.env.PUBLIC_URL + "/dash"}`}
+            component={Dashboard}
+          />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL + "/directorlist"}`}
+            component={Directorlist}
+          />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL + "/noticemeet"}`}
+            component={Noticeofmeet}
+          />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL + "/attendencelist"}`}
+            component={AttendenceList}
+          />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL + "/boardmeeting"}`}
+            component={Boardmeeting}
+          />
           {/* <Route
             exact
             path={`${
@@ -206,6 +303,16 @@ const App = () => {
             exact
             path={`${process.env.PUBLIC_URL + "/"}`}
             component={HomeOne}
+          />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL + "/login"}`}
+            component={Login}
+          />
+          <Route
+            exact
+            path={`${process.env.PUBLIC_URL + "/register"}`}
+            component={Register}
           />
           <Route exact component={Error404} />
         </Switch>

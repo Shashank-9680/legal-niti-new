@@ -12,7 +12,7 @@ import Anchor from "../../components/UI/Anchor";
 import { Link } from "react-router-dom";
 
 import ServicesData from "../../data/Services/services";
-import service_data from "../itemData/itemData.js";
+import service_data from "./itemData.js";
 
 const ServiceDetails = () => {
   const serviceID = new URLSearchParams(window.location.search).get("id");
@@ -74,7 +74,7 @@ const ServiceDetails = () => {
                         <Link
                           to={`${
                             process.env.PUBLIC_URL +
-                            `/service/${service?.title
+                            `/servicess/${service?.title
                               .split(" ")
                               .join("-")
                               .toLowerCase()}?id=${service?.id}&item=${index}`
@@ -115,11 +115,11 @@ const ServiceDetails = () => {
         </Sidebar>
       </PageWrapper>
 
-      {/* <div className="container">
+      <div className="container">
         <h2>{currentItemData?.title}</h2>
         <p>{currentItemData?.desc}</p>
         <p>{currentItemData?.middesc}</p>
-      </div> */}
+      </div>
 
       <RelatedServices />
     </Fragment>

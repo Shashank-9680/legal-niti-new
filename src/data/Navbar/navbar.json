@@ -88,5 +88,31 @@
     "id": 6,
     "title": "Contact",
     "link": "/contact"
+  },
+  {
+    "id": 7,
+    "title": "Documents",
+    "link" : "#",
+    "megaMenu":false,
+    "subMenu": [
+      {
+        "title": "Director List",
+        "link": "/directorlist"
+      },
+      {
+        "title": "Attendence List",
+        "link": "/attendencelist"
+      },
+      {
+        "title": "Notice of Meet",
+        "link": "/noticemeet"
+      },
+      {
+        "title": "Board of Meeting",
+        "link": "/boardmeeting"
+      }
+      
+    ]
   }
+
 ]
